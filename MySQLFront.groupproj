@@ -1,0 +1,132 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F5A13737-C124-4653-9ED3-E17B87987AF8}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="FastMM\Package\FastMM_18.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SynopsePDF\Packages\SynopsePDF_18.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BCHexEditor\Packages\BCHexEditor_18.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SynEdit\Packages\SynEdit_18.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="QueryBuilder\Packages\acQueryBuilderDsgn_18.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Win32\Packages\Win32_Ext_18.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VCL\Packages\VCL_Ext_18.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MySQL\Packages\MySQL_18.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MySQLFront.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FastMM_18">
+        <MSBuild Projects="FastMM\Package\FastMM_18.dproj"/>
+    </Target>
+    <Target Name="FastMM_18:Clean">
+        <MSBuild Projects="FastMM\Package\FastMM_18.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FastMM_18:Make">
+        <MSBuild Projects="FastMM\Package\FastMM_18.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SynopsePDF_18">
+        <MSBuild Projects="SynopsePDF\Packages\SynopsePDF_18.dproj"/>
+    </Target>
+    <Target Name="SynopsePDF_18:Clean">
+        <MSBuild Projects="SynopsePDF\Packages\SynopsePDF_18.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SynopsePDF_18:Make">
+        <MSBuild Projects="SynopsePDF\Packages\SynopsePDF_18.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BCHexEditor_18">
+        <MSBuild Projects="BCHexEditor\Packages\BCHexEditor_18.dproj"/>
+    </Target>
+    <Target Name="BCHexEditor_18:Clean">
+        <MSBuild Projects="BCHexEditor\Packages\BCHexEditor_18.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BCHexEditor_18:Make">
+        <MSBuild Projects="BCHexEditor\Packages\BCHexEditor_18.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SynEdit_18">
+        <MSBuild Projects="SynEdit\Packages\SynEdit_18.dproj"/>
+    </Target>
+    <Target Name="SynEdit_18:Clean">
+        <MSBuild Projects="SynEdit\Packages\SynEdit_18.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SynEdit_18:Make">
+        <MSBuild Projects="SynEdit\Packages\SynEdit_18.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="acQueryBuilderDsgn_18">
+        <MSBuild Projects="QueryBuilder\Packages\acQueryBuilderDsgn_18.dproj"/>
+    </Target>
+    <Target Name="acQueryBuilderDsgn_18:Clean">
+        <MSBuild Projects="QueryBuilder\Packages\acQueryBuilderDsgn_18.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="acQueryBuilderDsgn_18:Make">
+        <MSBuild Projects="QueryBuilder\Packages\acQueryBuilderDsgn_18.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Win32_Ext_18">
+        <MSBuild Projects="Win32\Packages\Win32_Ext_18.dproj"/>
+    </Target>
+    <Target Name="Win32_Ext_18:Clean">
+        <MSBuild Projects="Win32\Packages\Win32_Ext_18.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Win32_Ext_18:Make">
+        <MSBuild Projects="Win32\Packages\Win32_Ext_18.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VCL_Ext_18">
+        <MSBuild Projects="VCL\Packages\VCL_Ext_18.dproj"/>
+    </Target>
+    <Target Name="VCL_Ext_18:Clean">
+        <MSBuild Projects="VCL\Packages\VCL_Ext_18.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCL_Ext_18:Make">
+        <MSBuild Projects="VCL\Packages\VCL_Ext_18.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MySQL_18">
+        <MSBuild Projects="MySQL\Packages\MySQL_18.dproj"/>
+    </Target>
+    <Target Name="MySQL_18:Clean">
+        <MSBuild Projects="MySQL\Packages\MySQL_18.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MySQL_18:Make">
+        <MSBuild Projects="MySQL\Packages\MySQL_18.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MySQLFront">
+        <MSBuild Projects="MySQLFront.dproj"/>
+    </Target>
+    <Target Name="MySQLFront:Clean">
+        <MSBuild Projects="MySQLFront.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MySQLFront:Make">
+        <MSBuild Projects="MySQLFront.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FastMM_18;SynopsePDF_18;BCHexEditor_18;SynEdit_18;acQueryBuilderDsgn_18;Win32_Ext_18;VCL_Ext_18;MySQL_18;MySQLFront"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FastMM_18:Clean;SynopsePDF_18:Clean;BCHexEditor_18:Clean;SynEdit_18:Clean;acQueryBuilderDsgn_18:Clean;Win32_Ext_18:Clean;VCL_Ext_18:Clean;MySQL_18:Clean;MySQLFront:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FastMM_18:Make;SynopsePDF_18:Make;BCHexEditor_18:Make;SynEdit_18:Make;acQueryBuilderDsgn_18:Make;Win32_Ext_18:Make;VCL_Ext_18:Make;MySQL_18:Make;MySQLFront:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
